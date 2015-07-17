@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		250A21DF1B5998E900215B02 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 250A21DE1B5998E900215B02 /* main.m */; };
+		250A21E81B599C9A00215B02 /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = 250A21E71B599C9A00215B02 /* Item.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,8 @@
 /* Begin PBXFileReference section */
 		250A21DB1B5998E900215B02 /* RandomItems */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = RandomItems; sourceTree = BUILT_PRODUCTS_DIR; };
 		250A21DE1B5998E900215B02 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		250A21E71B599C9A00215B02 /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Item.m; path = RandomItems.xcodeproj/../Item.m; sourceTree = "<group>"; };
+		250A21E91B599C9E00215B02 /* Item.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Item.h; path = RandomItems.xcodeproj/../Item.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +44,8 @@
 		250A21D21B5998E900215B02 = {
 			isa = PBXGroup;
 			children = (
+				250A21E91B599C9E00215B02 /* Item.h */,
+				250A21E71B599C9A00215B02 /* Item.m */,
 				250A21DD1B5998E900215B02 /* RandomItems */,
 				250A21DC1B5998E900215B02 /* Products */,
 			);
@@ -118,6 +123,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				250A21E81B599C9A00215B02 /* Item.m in Sources */,
 				250A21DF1B5998E900215B02 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

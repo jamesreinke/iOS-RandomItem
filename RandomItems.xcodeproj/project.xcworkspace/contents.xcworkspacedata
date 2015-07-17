@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:../Item.h">
+   </FileRef>
+   <FileRef
+      location = "group:../Item.m">
+   </FileRef>
+   <FileRef
       location = "self:RandomItems.xcodeproj">
    </FileRef>
 </Workspace>
