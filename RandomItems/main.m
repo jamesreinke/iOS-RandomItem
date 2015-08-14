@@ -14,15 +14,24 @@ int main(int argc, const char * argv[]) {
         
         NSMutableArray *items = [[NSMutableArray alloc] init];
         
-        for (int i = 0; i < 10; i++){
-            Item *item = [Item randomItem];
-            [items addObject:item];
-        }
+        Item *backpack = [[Item alloc] initWithItemName:@"Backpack"];
+        [items addObject:backpack];
         
-        for (Item *item in items){
+        Item *calculator = [[Item alloc] initWithItemName:@"Calculator"];
+        [items addObject:calculator];
+        
+        backpack.containedItem = calculator;
+        
+        // These objects will never be destroyed because there exists a strong reference cycle
+        backpack = nil;
+        calculator = nil;
+        
+
+        
+        for (Item *item in items)
             NSLog(@"%@", item);
-        }
         
+        NSLog(@"Setting items to nil...");
         items = nil;
         
     }

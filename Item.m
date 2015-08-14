@@ -70,52 +70,24 @@
 }
 
 - (instancetype)initWithItemName:(NSString *)name
+                    serialNumber:(NSString *)sNumber
 {
-    return [self initWithItemName:name
-                   valueInDollars:0
-                     serialNumber:@""];
+    return [self initWithItemName:name valueInDollars:0 serialNumber:sNumber];
+}
+
+- (instancetype)initWithItemName:(NSString *)name valueInDollars:(int)value
+{
+    return [self initWithItemName:name valueInDollars:0 serialNumber: @""];
+}
+
+- (instancetype)initWithItemName:(NSString *)name
+{
+    return [self initWithItemName:name valueInDollars:0 serialNumber:@""];
 }
 // Override the default initializer
 - (instancetype)init
 {
     return [self initWithItemName:@"Justin Bieber"];
-}
-
-/* Getter and setter methods */
-
-- (void)setItemName:(NSString *)str;
-{
-    _itemName = str;
-}
-
-- (NSString *)itemName
-{
-    return _itemName;
-}
-
-- (void)setSerialNumber:(NSString *)str
-{
-    _serialNumber = str;
-}
-
-- (NSString *)serialNumber
-{
-    return _serialNumber;
-}
-
-- (void)setValueInDollars:(int)v
-{
-    _valueInDollars = v;
-}
-
-- (int)valueInDollars
-{
-    return _valueInDollars;
-}
-
-- (NSDate *)dateCreated
-{
-    return _dateCreated;
 }
 
 - (NSString *)description
@@ -128,6 +100,12 @@
         self.dateCreated];
     
     return descriptionString;
+}
+// We need to override the default setter to set the container value of the item being contained
+- (void)setContainedItem:(Item *)containedItem
+{
+    _containedItem = containedItem;
+    self.containedItem.container = self;
 }
 
 

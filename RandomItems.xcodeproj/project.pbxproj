@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		250A21DF1B5998E900215B02 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 250A21DE1B5998E900215B02 /* main.m */; };
 		250A21E81B599C9A00215B02 /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = 250A21E71B599C9A00215B02 /* Item.m */; };
+		250A21EC1B59BD8400215B02 /* Container.m in Sources */ = {isa = PBXBuildFile; fileRef = 250A21EB1B59BD8400215B02 /* Container.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,8 @@
 		250A21DE1B5998E900215B02 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		250A21E71B599C9A00215B02 /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Item.m; path = RandomItems.xcodeproj/../Item.m; sourceTree = "<group>"; };
 		250A21E91B599C9E00215B02 /* Item.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Item.h; path = RandomItems.xcodeproj/../Item.h; sourceTree = "<group>"; };
+		250A21EA1B59BD8400215B02 /* Container.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Container.h; sourceTree = "<group>"; };
+		250A21EB1B59BD8400215B02 /* Container.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Container.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +49,8 @@
 			children = (
 				250A21E91B599C9E00215B02 /* Item.h */,
 				250A21E71B599C9A00215B02 /* Item.m */,
+				250A21EA1B59BD8400215B02 /* Container.h */,
+				250A21EB1B59BD8400215B02 /* Container.m */,
 				250A21DD1B5998E900215B02 /* RandomItems */,
 				250A21DC1B5998E900215B02 /* Products */,
 			);
@@ -123,6 +128,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				250A21EC1B59BD8400215B02 /* Container.m in Sources */,
 				250A21E81B599C9A00215B02 /* Item.m in Sources */,
 				250A21DF1B5998E900215B02 /* main.m in Sources */,
 			);
